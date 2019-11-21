@@ -3,7 +3,7 @@ var canvas, backgroundImage;
 var gameState = 0;
 var playerCount;
 
-var database;
+var database,allPlayers;
 
 var form, player, game;
 
