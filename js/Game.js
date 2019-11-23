@@ -25,18 +25,20 @@ class Game {
   }
   play(){
     form.hide();
-    Text("Game Start",120,100);
+    text("Game Start",120,100);
     Player.getPlayerInfo();
+    var plr;
     if (allPlayers!==undefined){
       var display_position=130;
       display_position+=20;
       textSize(15);
       text(allPlayers[plr].name+":"+allPlayers[plr].distance,120,display_position);
     }
-  }
+  
   if(keyDown(UP_ARROW) && player.index!==null){
     player.distance+=50;
     player.update();
   }
 }
 }
+

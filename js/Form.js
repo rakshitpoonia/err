@@ -19,7 +19,7 @@ hide(){
     this.input.position(130, 160);
     this.button.position(250, 200);
 
-    this.button.mousePressed(function(){
+    this.button.mousePressed(()=>{
       this.input.hide();
       this.button.hide();
       
@@ -30,7 +30,7 @@ hide(){
       player.update();
       player.updateCount(playerCount);
       
-      this.greeting.html("Hello " + name );
+      this.greeting.html("Hello " + player.name );
       this.greeting.position(130, 160);
     });
 
